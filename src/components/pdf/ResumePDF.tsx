@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
         color: '#1f2937',
         lineHeight: 1.4,
         backgroundColor: '#ffffff',
+        borderTopWidth: 5,
+        borderTopColor: '#1e3a8a', // Dark Navy accent top border
     },
 
     // Header Styles
@@ -76,16 +78,17 @@ const styles = StyleSheet.create({
         marginBottom: 14,
     },
     sectionTitle: {
-        fontSize: 11,
+        fontSize: 10,
         fontWeight: 700,
         textTransform: 'uppercase',
-        color: '#111827',
-        backgroundColor: '#eff6ff',
-        paddingVertical: 4,
-        paddingHorizontal: 8,
+        color: '#ffffff',
+        backgroundColor: '#1e3a8a', // Dark Navy Background
+        paddingVertical: 5,
+        paddingHorizontal: 10,
         marginBottom: 8,
-        marginLeft: -8,
-        marginRight: -8,
+        marginLeft: -10,
+        marginRight: -10,
+        borderRadius: 2,
         letterSpacing: 0.8,
     },
 
@@ -136,7 +139,7 @@ const styles = StyleSheet.create({
     bulletMarker: {
         width: 10,
         fontSize: 8,
-        color: '#3b82f6',
+        color: '#1e3a8a', // Matching Dark Navy
         marginTop: 1,
     },
     bulletText: {
@@ -158,7 +161,7 @@ const styles = StyleSheet.create({
         fontSize: 10,
         fontWeight: 700,
         color: '#111827',
-        width: 110,
+        width: 160, // Increased from 110 to fix wrapping
     },
     skillList: {
         flex: 1,
@@ -276,9 +279,9 @@ export const ResumePDF = ({ data }: Props) => (
                         </View>
                         <View style={styles.bulletList}>
                             {job.description.map((desc, i) => (
-                                <View key={i} style={styles.bulletItem}>
-                                    <Text style={styles.bulletMarker}>•</Text>
-                                    <Text style={styles.bulletText}>{desc}</Text>
+                                <View key={i} style={styles.bulletItem} wrap={false}>
+                                    <Text style={styles.bulletMarker} wrap={false}>•</Text>
+                                    <Text style={styles.bulletText} wrap={false}>{desc}</Text>
                                 </View>
                             ))}
                         </View>

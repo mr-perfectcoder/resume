@@ -9,42 +9,19 @@ export const resumeData: ResumeData = {
     linkedin: "linkedin.com/in/offical-ashish",
     github: "mr-perfectcoder",
     secondGithub: "its-me-ar",
-    summary: "Senior Software Engineer with 5 years of experience building secure, scalable, and high-performance web and backend systems using Next.js, React, Node.js, and AWS. Strong expertise in end-to-end encryption, cloud-native architectures, asynchronous processing, and CRM migration pipelines. Hands-on experience with SBOM integration, dependency tracking, web security hardening, and Retrieval-Augmented Generation (RAG) systems using modern embedding models and LLMs. Proven ability to deliver production-grade, security-compliant solutions and mentor engineers.",
+    summary: "Senior Software Engineer with 5 years of experience building secure, scalable, and high-performance web systems using Next.js, React, and Node.js. Strong expertise in Performance Optimization (Core Web Vitals), Component Architecture / Design Systems, and Micro-front-end architecture. Hands-on experience with End-to-End Encryption, secure workflows, React Native, and AI operations (RAG pipelines). Proven track record of delivering production-grade, accessible, and security-compliant Front-end solutions.",
     experience: [
         {
             company: "Mindfire Solutions",
             role: "Senior Software Engineer",
             period: "Dec 2023 – Present",
             description: [
-                "Led development of enterprise-grade web applications using Next.js and React, focusing on scalability, modular architecture, and performance.",
-                "Designed and implemented a secure file-sharing platform with end-to-end encryption (E2EE) ensuring confidentiality of user data.",
-                "Built file-sharing workflows supporting private, public, and shared access modes.",
-                "Implemented shared-key–based access control to securely share encrypted files with trusted users and loved ones.",
-                "Ensured secure client-side key handling, encryption flows, and best practices.",
-                "Crafted responsive and accessible UIs using Material UI Joy and Tailwind CSS.",
-                "Integrated RESTful APIs using React Query for efficient caching, background refetching, and state synchronization.",
-                "Implemented role-based access control (RBAC) aligned with business requirements.",
-                "Integrated secure authentication using AWS Cognito, MS Auth, and NextAuth.",
-                "Developed real-time notifications and live updates using SignalR.",
-                "Built advanced frontend features including PDF generation with barcodes and dynamic formula-based bill calculators.",
-                "Enabled dynamic theming and module-specific UI customization.",
-                "Upgraded and maintained React Native applications (v0.70 → v0.75), integrated Firebase Cloud Messaging (FCM), and deployed stable builds to the App Store and Play Store.",
-                "Mentored junior developers, conducted code reviews, and supported onboarding.",
-                "Designed and developed a CRM-to-CRM data migration system using Node.js and Express.js.",
-                "Implemented Amazon SQS-based asynchronous pipelines for high-volume, reliable data migration.",
-                "Built JSON-driven migration workflows for flexible configuration and reuse.",
-                "Used DynamoDB to track migration state, checkpoints, retries, and job recovery.",
-                "Implemented restartable batch processing, enabling safe resumption of interrupted migrations.",
-                "Deployed backend services on AWS ECS, ensuring scalability, fault tolerance, and production reliability.",
-                "Integrated SBOM (Software Bill of Materials) generation to improve visibility into third-party dependencies.",
-                "Implemented dependency tracking and vulnerability monitoring to identify and mitigate security risks early.",
-                "Integrated Dependency-Track for continuous dependency analysis and security reporting.",
-                "Added and enforced web security headers including CSP, HSTS, X-Frame-Options, X-Content-Type-Options, and Referrer-Policy.",
-                "Automated security checks, dependency audits, and vulnerability scans as part of CI/CD pipelines.",
-                "Built a Retrieval-Augmented Generation (RAG) system that reads data from files and performs semantic search.",
-                "Generated embeddings using Hugging Face all-MiniLM-L6-v2.",
-                "Integrated the RAG pipeline with Gemini LLM to generate contextual, file-aware responses.",
-                "Applied vector-based retrieval to improve response relevance and accuracy."
+                "Led Senior Frontend Development (Next.js/React): Optimized Core Web Vitals with React Query, lazy loading, and code-splitting while engineering scalable, responsive, and accessible (WCAG) component libraries.",
+                "Architected E2EE File-Sharing Platform: Designed secure client-side encryption flows, key management, and shared-key access control for private/shared file workflows.",
+                "Engineered High-Volume Data Migration Pipelines: Created restartable async workflows using Node.js, Amazon SQS, and DynamoDB; deployed scalable backend services on AWS ECS.",
+                "Developed AI RAG Pipelines: Implemented semantic search using Gemini LLM and Hugging Face embedding models over client documents.",
+                "Hardened System Security & Compliance: Automated security checks using SBOM dependency scans in CI/CD and enforced strict web security headers (CSP, HSTS).",
+                "Advanced Integrations & Developer Mentorship: Handled Multi-Auth (Cognito, NextAuth), real-time updates (SignalR), maintained React Native apps, and mentored junior engineers."
             ]
         },
         {
@@ -90,16 +67,28 @@ export const resumeData: ResumeData = {
     projects: [], // No standalone personal projects listed separate from work experience
     skills: [
         {
-            title: "Frontend",
-            skills: ["React.js", "Next.js", "React Native", "TypeScript", "JavaScript"]
+            title: "Frontend Core",
+            skills: ["React.js", "Next.js", "React Native", "TypeScript", "JavaScript (ES6+)"]
+        },
+        {
+            title: "Performance & Architecture",
+            skills: ["Core Web Vitals", "Code Splitting", "Micro-frontend architecture", "Design Systems"]
+        },
+        {
+            title: "State & Data Management",
+            skills: ["React Query", "Redux Toolkit", "Context API", "REST APIs"]
         },
         {
             title: "UI & Styling",
-            skills: ["Tailwind CSS", "Material UI", "React Native Paper"]
+            skills: ["Tailwind CSS", "Material UI", "React Native Paper", "Responsive Design"]
         },
         {
-            title: "Backend",
-            skills: ["Node.js", "Express.js", "Nest.js"]
+            title: "Testing & Quality",
+            skills: ["Jest", "React Testing Library", "ESLint", "Prettier", "Lighthouse"]
+        },
+        {
+            title: "Backend & Systems",
+            skills: ["Node.js", "Express.js", "Nest.js", "RESTful APIs"]
         },
         {
             title: "Databases",
@@ -107,27 +96,15 @@ export const resumeData: ResumeData = {
         },
         {
             title: "Cloud & DevOps",
-            skills: ["AWS ECS", "SQS", "S3", "DynamoDB", "Azure Blob Storage"]
+            skills: ["AWS ECS", "SQS", "S3", "CI/CD Platforms"]
         },
         {
-            title: "Authentication & Security",
-            skills: ["AWS Cognito", "MS Auth", "NextAuth", "RBAC", "End-to-End Encryption"]
+            title: "Security & Authentication",
+            skills: ["AWS Cognito", "NextAuth", "End-to-End Encryption", "Web Security Headers (CSP)"]
         },
         {
-            title: "Security & Compliance",
-            skills: ["SBOM", "Dependency-Track", "Vulnerability Scanning", "Web Security Headers", "CSP"]
-        },
-        {
-            title: "AI / ML",
-            skills: ["RAG", "Hugging Face (all-MiniLM-L6-v2)", "Gemini LLM", "Vector Search"]
-        },
-        {
-            title: "Real-Time & Notifications",
-            skills: ["SignalR", "Firebase Cloud Messaging (FCM)"]
-        },
-        {
-            title: "Tools & Management",
-            skills: ["GitHub", "GitLab", "Jira", "ClickUp", "Swagger"]
+            title: "AI & Tools",
+            skills: ["RAG Pipelines", "Gemini LLM", "Vector Search", "Git", "GitHub", "Jira"]
         }
     ],
     education: [
