@@ -269,7 +269,7 @@ export const ResumePDF = ({ data }: Props) => (
             <View style={styles.section}>
                 <Text style={styles.sectionTitle}>Work Experience</Text>
                 {data.experience.map((job, index) => (
-                    <View key={index} style={styles.jobItem}>
+                    <View key={index} style={styles.jobItem} wrap={false}>
                         <View style={styles.jobHeader}>
                             <View style={styles.jobLeft}>
                                 <Text style={styles.companyName}>{job.company}</Text>
@@ -335,7 +335,7 @@ export const ResumePDF = ({ data }: Props) => (
             )}
 
             {/* Education */}
-            <View style={styles.section}>
+            <View style={styles.section} wrap={false}>
                 <Text style={styles.sectionTitle}>Education</Text>
                 {data.education.map((edu, index) => (
                     <View key={index} style={styles.educationItem}>
