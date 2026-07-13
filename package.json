@@ -1,11 +1,12 @@
 {
-  "name": "myy",
+  "name": "ashish-ranjan-resume",
   "private": true,
   "version": "0.0.0",
   "homepage": "https://mr-perfectcoder.github.io/resume/",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "pdf": "python3 scripts/generate_resume_pdf.py",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -13,13 +14,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^4.3.2",
     "@tailwindcss/postcss": "^4.1.18",
-    "framer-motion": "^11.15.0",
     "lucide-react": "^0.562.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-github-calendar": "^5.0.5"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
